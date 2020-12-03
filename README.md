@@ -6,4 +6,4 @@
 
 ### Linter
 
-![Linter](https://github.com/lastpatrol/frontend-project-lvl1/workflows/Linter/badge.svg)
+[![Linter](https://github.com/lastpatrol/frontend-project-lvl1/workflows/Linter/badge.svg)](https://github.com/lastpatrol/frontend-project-lvl1/actions)
