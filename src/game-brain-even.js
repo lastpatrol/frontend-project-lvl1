@@ -16,7 +16,7 @@ export default () => {
     const correctAnswer = isEven(number);
 
     console.log(`Question: ${number}`);
-    const userAnswer = readlineSync.question(`Your answer: `);
+    const userAnswer = readlineSync.question('Your answer: ');
 
     const isUserCorrect = correctAnswer === userAnswer;
 
@@ -30,4 +30,5 @@ export default () => {
   }
 
   console.log(`Congratulations, ${userName}!`);
+  return 0;
 };
