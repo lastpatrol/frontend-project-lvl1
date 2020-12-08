@@ -5,6 +5,9 @@
 ## Game demo: The Mighty Calc!
 [![asciicast](https://asciinema.org/a/Kxnix7bM0l6TodrI9tIKLNgdh.svg)](https://asciinema.org/a/Kxnix7bM0l6TodrI9tIKLNgdh)
 
+## Game demo: greatest common divisor
+[![asciicast](https://asciinema.org/a/GN5wFfwd66eOGo9S28XgPXS62.svg)](https://asciinema.org/a/GN5wFfwd66eOGo9S28XgPXS62)
+
 Isn't it exciting?
 
 ---
