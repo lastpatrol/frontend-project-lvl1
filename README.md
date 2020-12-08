@@ -8,6 +8,9 @@
 ## Game demo: greatest common divisor
 [![asciicast](https://asciinema.org/a/GN5wFfwd66eOGo9S28XgPXS62.svg)](https://asciinema.org/a/GN5wFfwd66eOGo9S28XgPXS62)
 
+## Game demo: arithmetic progression
+[![asciicast](https://asciinema.org/a/OWG1xdsX8i04mWHP6FvtXl9sN.svg)](https://asciinema.org/a/OWG1xdsX8i04mWHP6FvtXl9sN)
+
 Isn't it exciting?
 
 ---
