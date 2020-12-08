@@ -31,6 +31,6 @@ export const getGcd = (a, b) => {
   return iter(smaller);
 };
 
-export const getRandom = (max) => Math.floor(Math.random() * max);
+export const getRandom = (min, max) => Math.floor(Math.random() * (max + 1 - min)) + min;
 
 export const isEven = (num) => (num % 2) === 0;

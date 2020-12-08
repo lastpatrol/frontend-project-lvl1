@@ -3,8 +3,9 @@ import { cons, getRandom, getGcd } from '../src/utils.js';
 const objective = 'Find the greatest common divisor of given numbers.';
 
 const getTask = () => {
-  const a = getRandom(100) + 1;
-  const b = getRandom(100) + 1;
+  const maxNumber = 100;
+  const a = getRandom(1, maxNumber);
+  const b = getRandom(1, maxNumber);
   const question = `${a} ${b}`;
   const answer = String(getGcd(a, b));
   return cons(question, answer);

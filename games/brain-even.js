@@ -4,7 +4,7 @@ const objective = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 const getTask = () => {
   const maxNumber = 100;
-  const number = getRandom(maxNumber);
+  const number = getRandom(0, maxNumber);
   const question = String(number);
   const answer = String(isEven(number) ? 'yes' : 'no');
   return cons(question, answer);

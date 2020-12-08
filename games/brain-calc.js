@@ -3,10 +3,12 @@ import { getRandom, cons } from '../src/utils.js';
 const objective = 'What is the result of the expression?';
 
 const getTask = () => {
+  const maxNumAddition = 100;
+  const maxNumMulti = 13;
   const operators = ['+', '-', '*'];
-  const operator = operators[getRandom(3)];
-  const a = operator === '*' ? getRandom(14) : getRandom(101);
-  const b = operator === '*' ? getRandom(14) : getRandom(101);
+  const operator = operators[getRandom(0, 2)];
+  const a = operator === '*' ? getRandom(0, maxNumMulti) : getRandom(0, maxNumAddition);
+  const b = operator === '*' ? getRandom(0, maxNumMulti) : getRandom(0, maxNumAddition);
   const question = `${a} ${operator} ${b}`;
   let answer;
   switch (operator) {

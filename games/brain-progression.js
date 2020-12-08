@@ -3,11 +3,15 @@ import { getRandom, cons, getArithmeticProgression } from '../src/utils.js';
 const objective = 'What number is missing in the progression?';
 
 const getTask = () => {
-  const start = getRandom(101);
-  const step = getRandom(10) + 1;
-  const length = 10;
+  const maxStart = 100;
+  const maxStep = 20;
+  const minLength = 5;
+  const maxLength = 10;
+  const start = getRandom(0, maxStart);
+  const step = getRandom(1, maxStep);
+  const length = getRandom(minLength, maxLength);
   const progression = getArithmeticProgression(start, step, length);
-  const answerIndex = getRandom(length);
+  const answerIndex = getRandom(0, length - 1);
   const answerPlaceholder = '..';
   const answer = String(progression[answerIndex]);
   progression[answerIndex] = answerPlaceholder;
