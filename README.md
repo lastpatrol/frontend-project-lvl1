@@ -1,3 +1,10 @@
+[![Actions Status](https://github.com/lastpatrol/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/lastpatrol/frontend-project-lvl1/actions)
+[![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)
+[![Linter](https://github.com/lastpatrol/frontend-project-lvl1/workflows/Linter/badge.svg)](https://github.com/lastpatrol/frontend-project-lvl1/actions)
+
+---
+
+# Brain Games
 
 ## About
 This little Javascript project allows you to play simple games from command line. The application has modular architecture with thought-out interfaces and is easy to expand with new games.
@@ -30,16 +37,3 @@ This little Javascript project allows you to play simple games from command line
 [![asciicast](https://asciinema.org/a/d5wNogcbyZFcMdnozNl40njtA.svg)](https://asciinema.org/a/d5wNogcbyZFcMdnozNl40njtA)
 
 __Isn't it exciting?__
-
----
-
-### Handy badges
-
-#### Hexlet tests and linter status:
-[![Actions Status](https://github.com/lastpatrol/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/lastpatrol/frontend-project-lvl1/actions)
-
-#### CodeClimate:
-[![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)
-
-#### Internal linter
-[![Linter](https://github.com/lastpatrol/frontend-project-lvl1/workflows/Linter/badge.svg)](https://github.com/lastpatrol/frontend-project-lvl1/actions)
