@@ -16,9 +16,10 @@ const getGcd = (a, b) => {
 const objective = 'Find the greatest common divisor of given numbers.';
 
 const makeTask = () => {
-  const maxNumber = 100;
-  const a = getRandom(1, maxNumber);
-  const b = getRandom(1, maxNumber);
+  const maxNum = 100;
+  const minNum = 1;
+  const a = getRandom(minNum, maxNum);
+  const b = getRandom(minNum, maxNum);
   const question = `${a} ${b}`;
   const answer = String(getGcd(a, b));
   return cons(question, answer);

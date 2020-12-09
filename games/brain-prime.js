@@ -21,8 +21,9 @@ const isPrime = (num) => {
 const objective = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const makeTask = () => {
-  const maxNumber = 100;
-  const number = getRandom(1, maxNumber);
+  const maxNum = 100;
+  const minNum = 1;
+  const number = getRandom(minNum, maxNum);
   const question = String(number);
   const answer = isPrime(number) ? 'yes' : 'no';
   return cons(question, answer);

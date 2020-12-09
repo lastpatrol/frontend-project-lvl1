@@ -4,11 +4,13 @@ const objective = 'What number is missing in the progression?';
 
 const makeTask = () => {
   const maxStart = 100;
+  const minStart = 0;
   const maxStep = 20;
+  const minStep = 1;
   const minLength = 5;
   const maxLength = 10;
-  const start = getRandom(0, maxStart);
-  const step = getRandom(1, maxStep);
+  const start = getRandom(minStart, maxStart);
+  const step = getRandom(minStep, maxStep);
   const length = getRandom(minLength, maxLength);
   const answerIndex = getRandom(0, length - 1);
   const answer = String(start + step * answerIndex);

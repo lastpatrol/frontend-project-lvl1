@@ -3,8 +3,9 @@ import { getRandom, cons, isEven } from '../src/utils.js';
 const objective = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 const makeTask = () => {
-  const maxNumber = 100;
-  const number = getRandom(0, maxNumber);
+  const maxNum = 100;
+  const minNum = 0;
+  const number = getRandom(minNum, maxNum);
   const question = String(number);
   const answer = String(isEven(number) ? 'yes' : 'no');
   return cons(question, answer);
