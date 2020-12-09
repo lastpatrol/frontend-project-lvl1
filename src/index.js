@@ -6,12 +6,12 @@ const rounds = 3;
 
 const play = (game) => {
   const objective = car(game);
-  const getTask = cdr(game);
+  const makeTask = cdr(game);
   const userName = greetAndGetName();
   console.log(objective);
 
   for (let i = 0; i < rounds; i += 1) {
-    const task = getTask();
+    const task = makeTask();
     const question = car(task);
     const correctAnswer = cdr(task);
 

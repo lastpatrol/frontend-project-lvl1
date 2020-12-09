@@ -11,7 +11,7 @@ const getArithmeticProgression = (start, step, length) => {
   return result;
 };
 
-const getTask = () => {
+const makeTask = () => {
   const maxStart = 100;
   const maxStep = 20;
   const minLength = 5;
@@ -28,6 +28,6 @@ const getTask = () => {
   return cons(question, answer);
 };
 
-const game = cons(objective, getTask);
+const game = cons(objective, makeTask);
 
 export default game;

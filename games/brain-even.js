@@ -2,7 +2,7 @@ import { getRandom, cons, isEven } from '../src/utils.js';
 
 const objective = 'Answer "yes" if the number is even, otherwise answer "no".';
 
-const getTask = () => {
+const makeTask = () => {
   const maxNumber = 100;
   const number = getRandom(0, maxNumber);
   const question = String(number);
@@ -10,6 +10,6 @@ const getTask = () => {
   return cons(question, answer);
 };
 
-const game = cons(objective, getTask);
+const game = cons(objective, makeTask);
 
 export default game;

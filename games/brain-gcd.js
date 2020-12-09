@@ -15,7 +15,7 @@ const getGcd = (a, b) => {
 
 const objective = 'Find the greatest common divisor of given numbers.';
 
-const getTask = () => {
+const makeTask = () => {
   const maxNumber = 100;
   const a = getRandom(1, maxNumber);
   const b = getRandom(1, maxNumber);
@@ -24,6 +24,6 @@ const getTask = () => {
   return cons(question, answer);
 };
 
-const game = cons(objective, getTask);
+const game = cons(objective, makeTask);
 
 export default game;

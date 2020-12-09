@@ -2,7 +2,7 @@ import { getRandom, cons } from '../src/utils.js';
 
 const objective = 'What is the result of the expression?';
 
-const getTask = () => {
+const makeTask = () => {
   const maxNumAddition = 100;
   const maxNumMulti = 13;
   const operators = ['+', '-', '*'];
@@ -24,6 +24,6 @@ const getTask = () => {
   return cons(question, answer);
 };
 
-const game = cons(objective, getTask);
+const game = cons(objective, makeTask);
 
 export default game;
