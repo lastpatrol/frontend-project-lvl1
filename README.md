@@ -11,6 +11,9 @@
 ## Game demo: arithmetic progression
 [![asciicast](https://asciinema.org/a/OWG1xdsX8i04mWHP6FvtXl9sN.svg)](https://asciinema.org/a/OWG1xdsX8i04mWHP6FvtXl9sN)
 
+## Game demo: is it prime?
+[![asciicast](https://asciinema.org/a/d5wNogcbyZFcMdnozNl40njtA.svg)](https://asciinema.org/a/d5wNogcbyZFcMdnozNl40njtA)
+
 Isn't it exciting?
 
 ---
