@@ -1,4 +1,17 @@
-import { cons, getRandom, getGcd } from '../src/utils.js';
+import { cons, getRandom } from '../src/utils.js';
+
+const getGcd = (a, b) => {
+  const iter = (divisor) => {
+    if (a % divisor === 0 && b % divisor === 0) {
+      return divisor;
+    }
+
+    return iter(divisor - 1);
+  };
+
+  const smaller = a < b ? a : b;
+  return iter(smaller);
+};
 
 const objective = 'Find the greatest common divisor of given numbers.';
 

@@ -1,6 +1,15 @@
-import { getRandom, cons, getArithmeticProgression } from '../src/utils.js';
+import { getRandom, cons } from '../src/utils.js';
 
 const objective = 'What number is missing in the progression?';
+
+const getArithmeticProgression = (start, step, length) => {
+  const result = [];
+  for (let i = 0; i < length; i += 1) {
+    result.push(start + step * i);
+  }
+
+  return result;
+};
 
 const getTask = () => {
   const maxStart = 100;
