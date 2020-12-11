@@ -1,4 +1,5 @@
 import { getRandom, cons } from '../utils.js';
+import play from '../index.js';
 
 const objective = 'What number is missing in the progression?';
 
@@ -30,5 +31,6 @@ const makeTask = () => {
 };
 
 const game = cons(objective, makeTask);
+const launch = () => play(game);
 
-export default game;
+export default launch;

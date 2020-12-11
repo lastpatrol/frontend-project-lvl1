@@ -1,4 +1,5 @@
 import { cons, getRandom, isEven } from '../utils.js';
+import play from '../index.js';
 
 const isPrime = (num) => {
   if (num < 3) {
@@ -30,5 +31,6 @@ const makeTask = () => {
 };
 
 const game = cons(objective, makeTask);
+const launch = () => play(game);
 
-export default game;
+export default launch;

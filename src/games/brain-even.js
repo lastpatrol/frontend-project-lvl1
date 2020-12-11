@@ -1,4 +1,5 @@
 import { getRandom, cons, isEven } from '../utils.js';
+import play from '../index.js';
 
 const objective = 'Answer "yes" if the number is even, otherwise answer "no".';
 
@@ -12,5 +13,6 @@ const makeTask = () => {
 };
 
 const game = cons(objective, makeTask);
+const launch = () => play(game);
 
-export default game;
+export default launch;

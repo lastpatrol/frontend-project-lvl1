@@ -1,4 +1,5 @@
 import { cons, getRandom } from '../utils.js';
+import play from '../index.js';
 
 const getGcd = (a, b) => {
   const iter = (divisor) => {
@@ -26,5 +27,6 @@ const makeTask = () => {
 };
 
 const game = cons(objective, makeTask);
+const launch = () => play(game);
 
-export default game;
+export default launch;
