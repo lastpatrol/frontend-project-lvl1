@@ -2,7 +2,11 @@ import getRandom from '../utils.js';
 import play from '../index.js';
 
 const isPrime = (num) => {
-  if (num < 3) {
+  if (num < 2) {
+    return false;
+  }
+
+  if (num === 2) {
     return true;
   }
 
