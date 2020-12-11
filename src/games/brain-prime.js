@@ -1,4 +1,4 @@
-import { cons, getRandom, isEven } from '../src/utils.js';
+import { cons, getRandom, isEven } from '../utils.js';
 
 const isPrime = (num) => {
   if (num < 3) {

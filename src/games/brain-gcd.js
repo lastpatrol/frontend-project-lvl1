@@ -1,4 +1,4 @@
-import { cons, getRandom } from '../src/utils.js';
+import { cons, getRandom } from '../utils.js';
 
 const getGcd = (a, b) => {
   const iter = (divisor) => {

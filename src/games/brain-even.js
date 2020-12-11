@@ -1,4 +1,4 @@
-import { getRandom, cons, isEven } from '../src/utils.js';
+import { getRandom, cons, isEven } from '../utils.js';
 
 const objective = 'Answer "yes" if the number is even, otherwise answer "no".';
 
