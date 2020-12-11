@@ -5,20 +5,12 @@ const objective = 'What is the result of the expression?';
 
 const makeTask = () => {
   const minNum = 0;
-  const maxNumAddition = 100;
-  const maxNumMulti = 13;
+  const maxNum = 20;
   const operators = ['+', '-', '*'];
   const operatorsLength = operators.length;
   const operator = operators[getRandom(0, operatorsLength - 1)];
-  let a;
-  let b;
-  if (operator === '*') {
-    a = getRandom(minNum, maxNumMulti);
-    b = getRandom(minNum, maxNumMulti);
-  } else {
-    a = getRandom(minNum, maxNumAddition);
-    b = getRandom(minNum, maxNumAddition);
-  }
+  const a = getRandom(minNum, maxNum);
+  const b = getRandom(minNum, maxNum);
 
   const question = `${a} ${operator} ${b}`;
   let answer;
