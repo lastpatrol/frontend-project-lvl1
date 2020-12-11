@@ -1,4 +1,4 @@
-import { getRandom } from '../utils.js';
+import getRandom from '../utils.js';
 import play from '../index.js';
 
 const objective = 'What number is missing in the progression?';

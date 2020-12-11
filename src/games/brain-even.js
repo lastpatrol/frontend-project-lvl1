@@ -1,5 +1,7 @@
-import { getRandom, isEven } from '../utils.js';
+import getRandom from '../utils.js';
 import play from '../index.js';
+
+const isEven = (num) => (num % 2) === 0;
 
 const objective = 'Answer "yes" if the number is even, otherwise answer "no".';
 

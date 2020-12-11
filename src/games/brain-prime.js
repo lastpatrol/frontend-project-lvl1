@@ -1,4 +1,4 @@
-import { getRandom, isEven } from '../utils.js';
+import getRandom from '../utils.js';
 import play from '../index.js';
 
 const isPrime = (num) => {
@@ -6,7 +6,7 @@ const isPrime = (num) => {
     return true;
   }
 
-  if (isEven(num)) {
+  if (num % 2 === 0) {
     return false;
   }
 
