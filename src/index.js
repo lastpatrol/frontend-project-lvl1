@@ -22,12 +22,10 @@ const play = (game) => {
     } else {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
       console.log(`Let's try again, ${userName}!`);
-      return 1;
     }
   }
 
   console.log(`Congratulations, ${userName}!`);
-  return 0;
 };
 
 export default play;
