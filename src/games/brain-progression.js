@@ -1,6 +1,14 @@
 import getRandom from '../utils.js';
 import play from '../index.js';
 
+const makeProgression = (start, step, length) => {
+  const progression = [];
+  for (let i = 0; i < length; i += 1) {
+    progression.push(String(start + step * i));
+  }
+  return progression;
+};
+
 const objective = 'What number is missing in the progression?';
 
 const makeTask = () => {
@@ -14,18 +22,11 @@ const makeTask = () => {
   const step = getRandom(minStep, maxStep);
   const length = getRandom(minLength, maxLength);
   const answerIndex = getRandom(0, length - 1);
-  const answer = String(start + step * answerIndex);
   const answerPlaceholder = '..';
 
-  const progression = [];
-  for (let i = 0; i < length; i += 1) {
-    if (i === answerIndex) {
-      progression.push(answerPlaceholder);
-    } else {
-      progression.push(String(start + step * i));
-    }
-  }
-
+  const progression = makeProgression(start, step, length);
+  const answer = progression[answerIndex];
+  progression[answerIndex] = answerPlaceholder;
   const question = progression.join(' ');
   return { question, answer };
 };
