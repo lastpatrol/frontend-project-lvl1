@@ -1,4 +1,4 @@
-import { cons, getRandom } from '../utils.js';
+import { getRandom } from '../utils.js';
 import play from '../index.js';
 
 const getGcd = (a, b) => {
@@ -23,10 +23,10 @@ const makeTask = () => {
   const b = getRandom(minNum, maxNum);
   const question = `${a} ${b}`;
   const answer = String(getGcd(a, b));
-  return cons(question, answer);
+  return { question, answer };
 };
 
-const game = cons(objective, makeTask);
+const game = { objective, makeTask };
 const launch = () => play(game);
 
 export default launch;

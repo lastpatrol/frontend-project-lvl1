@@ -1,4 +1,4 @@
-import { cons, getRandom, isEven } from '../utils.js';
+import { getRandom, isEven } from '../utils.js';
 import play from '../index.js';
 
 const isPrime = (num) => {
@@ -27,10 +27,10 @@ const makeTask = () => {
   const number = getRandom(minNum, maxNum);
   const question = String(number);
   const answer = isPrime(number) ? 'yes' : 'no';
-  return cons(question, answer);
+  return { question, answer };
 };
 
-const game = cons(objective, makeTask);
+const game = { objective, makeTask };
 const launch = () => play(game);
 
 export default launch;

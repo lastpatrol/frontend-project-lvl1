@@ -1,4 +1,4 @@
-import { getRandom, cons } from '../utils.js';
+import { getRandom } from '../utils.js';
 import play from '../index.js';
 
 const objective = 'What is the result of the expression?';
@@ -31,10 +31,10 @@ const makeTask = () => {
     default:
       answer = String(a * b);
   }
-  return cons(question, answer);
+  return { question, answer };
 };
 
-const game = cons(objective, makeTask);
+const game = { objective, makeTask };
 const launch = () => play(game);
 
 export default launch;
