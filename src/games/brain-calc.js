@@ -8,7 +8,8 @@ const makeTask = () => {
   const maxNumAddition = 100;
   const maxNumMulti = 13;
   const operators = ['+', '-', '*'];
-  const operator = operators[getRandom(0, 2)];
+  const operatorsLength = operators.length;
+  const operator = operators[getRandom(0, operatorsLength - 1)];
   let a;
   let b;
   if (operator === '*') {
