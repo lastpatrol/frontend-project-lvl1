@@ -3,6 +3,17 @@ import play from '../index.js';
 
 const description = 'What is the result of the expression?';
 
+const calculate = (a, b, operator) => {
+  switch (operator) {
+    case '+':
+      return a + b;
+    case '-':
+      return a - b;
+    default:
+      return a * b;
+  }
+};
+
 const makeTask = () => {
   const minNum = 0;
   const maxNum = 20;
@@ -13,17 +24,7 @@ const makeTask = () => {
   const b = getRandom(minNum, maxNum);
 
   const question = `${a} ${operator} ${b}`;
-  let answer;
-  switch (operator) {
-    case '+':
-      answer = String(a + b);
-      break;
-    case '-':
-      answer = String(a - b);
-      break;
-    default:
-      answer = String(a * b);
-  }
+  const answer = String(calculate(a, b, operator));
   return { question, answer };
 };
 
