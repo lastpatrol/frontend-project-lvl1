@@ -23,7 +23,7 @@ const isPrime = (num) => {
   return true;
 };
 
-const objective = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const makeTask = () => {
   const maxNum = 100;
@@ -34,7 +34,7 @@ const makeTask = () => {
   return { question, answer };
 };
 
-const game = { objective, makeTask };
+const game = { description, makeTask };
 const launch = () => play(game);
 
 export default launch;

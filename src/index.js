@@ -7,8 +7,8 @@ const play = (game) => {
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}!`);
 
-  const { objective, makeTask } = game;
-  console.log(objective);
+  const { description, makeTask } = game;
+  console.log(description);
 
   for (let i = 0; i < rounds; i += 1) {
     const task = makeTask();

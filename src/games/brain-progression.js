@@ -9,7 +9,7 @@ const makeProgression = (start, step, length) => {
   return progression;
 };
 
-const objective = 'What number is missing in the progression?';
+const description = 'What number is missing in the progression?';
 
 const makeTask = () => {
   const maxStart = 100;
@@ -31,7 +31,7 @@ const makeTask = () => {
   return { question, answer };
 };
 
-const game = { objective, makeTask };
+const game = { description, makeTask };
 const launch = () => play(game);
 
 export default launch;

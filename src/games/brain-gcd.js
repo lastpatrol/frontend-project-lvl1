@@ -14,7 +14,7 @@ const getGcd = (a, b) => {
   return iter(smaller);
 };
 
-const objective = 'Find the greatest common divisor of given numbers.';
+const description = 'Find the greatest common divisor of given numbers.';
 
 const makeTask = () => {
   const maxNum = 100;
@@ -26,7 +26,7 @@ const makeTask = () => {
   return { question, answer };
 };
 
-const game = { objective, makeTask };
+const game = { description, makeTask };
 const launch = () => play(game);
 
 export default launch;

@@ -3,7 +3,7 @@ import play from '../index.js';
 
 const isEven = (num) => (num % 2) === 0;
 
-const objective = 'Answer "yes" if the number is even, otherwise answer "no".';
+const description = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 const makeTask = () => {
   const maxNum = 100;
@@ -14,7 +14,7 @@ const makeTask = () => {
   return { question, answer };
 };
 
-const game = { objective, makeTask };
+const game = { description, makeTask };
 const launch = () => play(game);
 
 export default launch;

@@ -1,7 +1,7 @@
 import getRandom from '../utils.js';
 import play from '../index.js';
 
-const objective = 'What is the result of the expression?';
+const description = 'What is the result of the expression?';
 
 const makeTask = () => {
   const minNum = 0;
@@ -27,7 +27,7 @@ const makeTask = () => {
   return { question, answer };
 };
 
-const game = { objective, makeTask };
+const game = { description, makeTask };
 const launch = () => play(game);
 
 export default launch;
